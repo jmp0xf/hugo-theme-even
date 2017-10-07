@@ -160,7 +160,7 @@ Even.beforeToc = function () {
     const headers = document.querySelectorAll('.post-content>h' + num)
     for (let i = 0; i < headers.length; i++) {
       const header = headers[i]
-      header.innerHTML = `<a href="#${header.id}" class="headerlink" title="${header.innerHTML}"></a>${header.innerHTML}`
+      header.innerHTML = `<a href="#${header.id}" class="headerlink" title="${header.textContent}"></a>${header.innerHTML}`
     }
   }
 }

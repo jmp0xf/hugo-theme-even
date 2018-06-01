@@ -9,5 +9,8 @@ $(document).ready(function () {
   Even.fancybox()
 })
 
-hljs.initHighlighting()
-Even.highlight()
+if (ENABLE_HIGHLIGHT===true) {
+  hljs.initHighlighting();
+  Even.highlight();
+}
+
